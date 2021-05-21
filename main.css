@@ -1,0 +1,201 @@
+#product-overview{
+    background: linear-gradient(to top,rgba(80,68,18,0.6) 10%, transparent),url("./images/freedom-1.jpg") center/cover no-repeat border-box border-box fixed, #ff1b68;
+    /* background-size: cover;
+    background-position: left 10% bottom 20%; */
+    /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+    background-attachment: fixed; */
+    /* border: 2px dashed red; */
+    /* background-image: linear-gradient(120deg,red, blue); */
+    width:100%;
+    height: 700px;
+    padding: 10px;
+    /* margin-top: 4px; */
+    position: relative;
+}
+#product-overview h1{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) and (min-height: 40rem) {
+    #product-overview{
+        height: 40vh;
+        background-position: 30% 25%;
+    }
+    #product-overview h1{
+        font-size: 3rem;
+    }
+}
+
+.plan {
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px 0;
+    display: block;
+    width: 100%;
+}
+
+.highlight_plan{
+    background: #19b84c;
+    color: #fff;
+}
+
+.plan_title {
+    color: #0e4f1f;
+}
+.plan_price {
+    color: rgb(104, 90, 90);
+}
+.highlight_plan .plan_title {
+    color: white;
+}
+
+.recommeded{
+    background: #fff;
+    color: #2ddf5c;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.plan__features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+.plan__features li{
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
+@media (min-width: 40rem){
+    .plan_list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .plan {
+        width: 30%;
+        margin: 8px;
+        min-width: 13rem;
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28rem;
+    }
+    .highlight_plan{
+        box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.5);
+        height: 30rem;
+        z-index: 50;
+    }
+    
+}
+
+.reasons {
+    background: #ff1b68;
+    padding: 16px;
+    margin: 80px 0 0 0;
+}
+.reasons > .section-title{
+    color: #fff;
+    margin: 32px;
+}
+.key_feature_lists{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.key_feature_lists li{
+    padding: 10px;
+    width: 100%;
+    
+}
+@media (min-width: 40rem){
+    .key_feature_lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .key_feature_lists li{
+        width: 30%;
+        max-width: 25rem;
+    }
+
+}
+.key_feature_desc {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.key_feature_image {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background: #cf5f85;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
