@@ -4,6 +4,7 @@ var selectPlanButton = document.querySelectorAll('.plan button');
 var selectNegative = document.querySelector('.modal__actions button');
 var toggleButton = document.querySelector('.toggle-button');
 var mobileNavBar = document.querySelector('.mobile-nav');
+var ctaButton = document.querySelector('.main-nav-item__cta');
 
 for (var i=0;i < selectPlanButton.length;i++){
     selectPlanButton[i].addEventListener('click',function(){
@@ -34,3 +35,14 @@ toggleButton.addEventListener('click',function(){
     backdrop.classList.add('open');
 })
 
+ctaButton.addEventListener('animationstart',function(e){
+    console.log('animationStarted',e);
+})
+
+ctaButton.addEventListener('animationend',function(e){
+    console.log('animationEnd',e);
+})
+
+ctaButton.addEventListener('animationiteration',function(e){
+    console.log('animationIteration',e);
+})

@@ -121,6 +121,8 @@ main{
 
   .open {
       display: block !important;
+      opacity: 1 !important;
+      transform: translateY(0) !important;
   }
 
 .main-nav__item > a,
@@ -136,6 +138,9 @@ main{
     cursor: pointer;
     border-bottom: 3px solid #fff;
 } 
+.main-nav-item__cta {
+    animation: wiggle 200ms 3s 8 forwards;
+}
 
 .main-nav-item__cta a,
 .mobile-nav__item--cta a{
@@ -225,5 +230,15 @@ main{
         
         flex-direction: row;
         justify-content: center;
+    }
+}
+
+
+@keyframes wiggle {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(10deg);
     }
 }
